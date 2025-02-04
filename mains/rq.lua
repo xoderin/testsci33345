@@ -544,7 +544,7 @@ end
         end
 			local queue_on_teleport = syn and syn.queue_on_teleport or queue_on_teleport
 			if queue_on_teleport ~= nil then
-    		queue_on_teleport("loadstring(game:HttpGet(('https://raw.githubusercontent.com/xoderin/testsci33345/refs/heads/main/mains/rq.lua?token=GHSAT0AAAAAAC6LIDT6OJJMIXXY2SSRPS5EZ5BR37Q')))()")
+    		queue_on_teleport("loadstring(game:HttpGet(('https://raw.githubusercontent.com/xoderin/testsci33345/refs/heads/main/mains/rq.lua')))()")
 			task.wait()
 		end
 		ChangeData("TargetServer.JobId",tostring(Server.id),true)
