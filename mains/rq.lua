@@ -544,7 +544,7 @@ end
         end
 			local queue_on_teleport = syn and syn.queue_on_teleport or queue_on_teleport
 			if queue_on_teleport ~= nil then
-    		queue_on_teleport("loadstring(game:HttpGet(('https://raw.githubusercontent.com/NaikoScript/Kat-Plus/main/Script')))()")
+    		queue_on_teleport("loadstring(game:HttpGet(('https://raw.githubusercontent.com/NaikoScript/Kat-Plus/main/Script_linkhere')))()")
 			task.wait()
 		end
 		ChangeData("TargetServer.JobId",tostring(Server.id),true)
@@ -833,9 +833,7 @@ Template7.ItemIcon.Image = "rbxassetid://17698072241"
 	end
 end
 end)
-task.spawn(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/NaikoScript/r/main/r3.lua')))()
-end)
+
 for _, Selection in pairs (Settings.Options:GetChildren()) do
 	if Selection:IsA("GuiBase2d") then
 		local Parent = Selection:FindFirstAncestorWhichIsA("GuiBase")
