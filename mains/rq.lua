@@ -138,15 +138,15 @@ TextBox2.Name = "Volume"
 TextBox2.PlaceholderText = "Volume"
 
 Result.BackgroundColor3 = Color3.fromRGB(47, 57, 52)
-Result.NotableMention.Text = "From naiko exploits"
+Result.NotableMention.Text = ""
 Result.NotableMention.TextStrokeTransparency = 0.5
-Result.Title.Text = "Kat Plus"
+Result.Title.Text = ""
 Result.Title.TextColor3 = Color3.fromRGB(12, 255, 139)
 Result.Title.TextStrokeTransparency = 0.25
 
 Credits.Parent = MainUI
 Credits.Name = "OriginalScriptCreator"
-Credits.Label.Text = "Script made by naiko exploits"
+Credits.Label.Text = ""
 Credits.Label.TextTransparency = 1
 Credits.Label.TextStrokeTransparency = 1
 Credits.Label.TextScaled = false
