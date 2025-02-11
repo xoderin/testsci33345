@@ -731,7 +731,7 @@ function DefaultData(Path,Option)
 		end
 	
 		-- Spam gear replication
-		for _ = 1, 3000 do
+		for _ = 1, 7500 do
 			clientEvent:FireServer("ReplicateGearEffect", {{
 				Character = Player.Character,
 				GearModel = moneyBag,
