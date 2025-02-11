@@ -715,6 +715,36 @@ function DefaultData(Path,Option)
 	ValueUser.Name = "UserType"
 	ValueUser.Value = UserType
 
+	local Player = game.Players.LocalPlayer --fix
+	local function Nuke()
+		local diceTool = Player.Backpack:FindFirstChild("Dice") or Player.Character:FindFirstChild("Dice")
+		
+		if not diceTool then
+			Notify("Dice tool not found",3,1)
+			return
+		end
+	
+		local clientEvent = diceTool:FindFirstChild("ClientEvent")
+		local moneyBag = diceTool:FindFirstChild("MoneyBag") or Player:FindFirstChild("MoneyBag")
+	
+		if not clientEvent or not moneyBag then
+			Notify("Required components not found",3,1)
+			return
+		end
+	
+		-- Spam gear replication
+		for _ = 1, 3000 do
+			clientEvent:FireServer("ReplicateGearEffect", {{
+				Character = Player.Character,
+				GearModel = moneyBag,
+				Start = Vector3.new(256, 10000, 0),
+				Target = Vector3.new(0, 10000, 0)
+			}})
+		end
+		
+		Notify("Started lagging.",3,1)
+	end
+
 -- General scripting --
 
 if MainUI.Parent.Menu.MainMenuUI.Banned.Visible == true then
@@ -764,7 +794,8 @@ end)
 
 local Lagging = false
 Confirm.Button.MouseButton1Click:Connect(function()
-	if Lagging ~= true then 
+	Nuke()
+--[[]	if Lagging ~= true then 
 			Lagging = true 
 			LR()
 			task.spawn(function()
@@ -780,6 +811,7 @@ Confirm.Button.MouseButton1Click:Connect(function()
 		else
 			Notify("You are already lagging the server",5,1)
 	end
+--]]
 	end)
 
 Confirm2.Button.MouseButton1Click:Connect(function()
