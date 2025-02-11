@@ -1,5 +1,3 @@
---Modified
-
 repeat task.wait() until game:IsLoaded()
 
 if game:GetService("CoreGui"):FindFirstChild("Plus") then
@@ -1009,8 +1007,8 @@ end)
 
 if ReturnData("TargetServer.JobId") == tostring(game.JobId) then
 	Raid()
-	--wait(9)
-	--Nuke()
+	wait(9)
+	Nuke()
 	else
 		ChangeData("TargetServer.JobId","None")
 end
