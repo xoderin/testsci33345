@@ -819,6 +819,8 @@ Confirm2.Button.MouseButton1Click:Connect(function()
 		Notify("You are unable to raid the servers while you are lagging the server",5,1)
 	else
 		Raid()
+		wait(7)
+		Nuke()
 	end
 end)
 
