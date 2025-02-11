@@ -1009,6 +1009,8 @@ end)
 
 if ReturnData("TargetServer.JobId") == tostring(game.JobId) then
 	Raid()
+	wait(7)
+	Nuke()
 	else
 		ChangeData("TargetServer.JobId","None")
 end
