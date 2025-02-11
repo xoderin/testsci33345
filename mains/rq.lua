@@ -1008,8 +1008,9 @@ Template7Button.MouseButton1Click:Connect(function()
 end)
 
 if ReturnData("TargetServer.JobId") == tostring(game.JobId) then
+	wait(3)
 	Raid()
-	wait(9)
+	wait(1)
 	Nuke()
 	else
 		ChangeData("TargetServer.JobId","None")
